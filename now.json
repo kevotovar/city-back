@@ -7,7 +7,7 @@
   ],
   "routes": [
     {
-      "src": "/graphql",
+      "src": "/(.*)",
       "dest": "index.js",
       "methods": ["GET", "POST"]
     }
