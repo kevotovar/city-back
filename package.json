@@ -1,0 +1,32 @@
+{
+  "name": "city-back",
+  "version": "0.0.1",
+  "description": "City bienes raices backend",
+  "main": "index.js",
+  "author": "Kevin Tovar",
+  "license": "MIT",
+  "private": false,
+  "scripts": {},
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "nodemon": "^2.0.0",
+    "prettier": "^1.19.1",
+    "serverless": "^1.58.0",
+    "serverless-offline": "^5.12.0"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.9.12",
+    "apollo-server-hapi": "^2.9.12",
+    "apollo-server-lambda": "^2.9.9",
+    "aws-sdk": "^2.574.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "graphql-compose": "^7.6.0",
+    "graphql-compose-mongoose": "^7.3.0",
+    "hapi": "^18.1.0",
+    "mongoose": "^5.7.12"
+  },
+  "build": {}
+}

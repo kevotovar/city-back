@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/graphql",
+      "dest": "index.js",
+      "methods": ["GET", "POST"]
+    }
+  ],
+  "env": {
+    "DB_URL": "@db_url"
+  }
+}
