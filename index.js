@@ -18,4 +18,10 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app })
 
+app.get('/', (_, res) =>
+  res({
+    status: 'ok',
+  })
+)
+
 app.listen(PORT)
