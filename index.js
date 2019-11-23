@@ -19,7 +19,7 @@ const server = new ApolloServer({
 server.applyMiddleware({ app })
 
 app.get('/', (_, res) =>
-  res({
+  res.json({
     status: 'ok',
   })
 )
