@@ -6,15 +6,19 @@
   "author": "Kevin Tovar",
   "license": "MIT",
   "private": false,
-  "scripts": {},
+  "scripts": {
+    "dev": "now dev --listen 4001"
+  },
   "devDependencies": {
     "eslint": "^6.6.0",
     "nodemon": "^2.0.0",
+    "now": "^16.6.0",
     "prettier": "^1.19.1"
   },
   "dependencies": {
     "apollo-server-express": "^2.9.12",
     "aws-sdk": "^2.574.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graphql": "^14.5.8",

@@ -3,6 +3,7 @@ const { ApolloServer } = require('apollo-server-express')
 const dotenv = require('dotenv')
 const { schemaComposer } = require('graphql-compose')
 const queries = require('./src/queries')
+const cors = require('cors')
 require('./src/db/mongo')
 dotenv.config()
 
@@ -21,6 +22,12 @@ server.applyMiddleware({ app })
 app.get('/', (_, res) =>
   res.json({
     status: 'ok',
+  })
+)
+
+app.use(
+  cors({
+    origin: '*',
   })
 )
 
